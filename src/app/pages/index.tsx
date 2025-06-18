@@ -7,6 +7,8 @@ import styles from '../styles/Home.module.css'
 import GradientBG from '../components/GradientBG';
 import Header from '../components/Header';
 import HeroText from '../components/HeroText';
+import ProjectCard from '../components/ProjectCard';
+import { projectCardsData } from '../data/ProjectData';
 
 const Home: React.FC = () => {
   return (
@@ -71,25 +73,9 @@ const Home: React.FC = () => {
               Features
             </motion.h2>
             <div className={styles.featuresGrid}>
-              {[
-                { title: 'Responsive Design', description: 'Looks great on all devices' },
-                { title: 'TypeScript', description: 'Type-safe development' },
-                { title: 'CSS Modules', description: 'Scoped styling' },
-                { title: 'Motion', description: 'Smooth animations' }
-              ].map((feature, index) => (
-                <motion.div 
-                  key={feature.title}
-                  className={styles.featureCard}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -5 }}
-                >
-                  <h3 className={styles.featureTitle}>{feature.title}</h3>
-                  <p className={styles.featureDescription}>{feature.description}</p>
-                </motion.div>
-              ))}
+              {projectCardsData.map((project, index) => (
+               <ProjectCard key={project.title} {...project} />
+          ))}
             </div>
           </div>
         </section>

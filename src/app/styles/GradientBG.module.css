@@ -30,7 +30,7 @@
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: url("../../media/noise3.gif"); /* or /grain.webm for video */
+  background: url("/images/noise3.gif"); /* or /grain.webm for video */
   background-size: auto;
   background-repeat: repeat;
   mix-blend-mode: overlay; /* or overlay, multiply, screen */
