@@ -6,10 +6,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   position: relative;
   overflow: hidden;
-  
 }
 
 .heroContent {
@@ -20,9 +19,9 @@
 }
 
 .heroTitle {
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
   line-height: 0.9;
   letter-spacing: -1px;
   font-family: monospace;
@@ -30,13 +29,13 @@
 }
 
 .textBlock {
-  margin:15vw;
-  max-width:1000px;
+  margin: 16vw;
+  max-width: 1000px;
   font-family: "Space Mono", monospace;
   font-weight: 400;
   text-transform: uppercase;
   font-style: normal;
-  font-size: clamp(36px, 8vw, 80px);
+  font-size: clamp(36px, 10vw, 80px);
   color: var(--text-color);
 }
 

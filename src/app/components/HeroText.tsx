@@ -20,7 +20,7 @@ const HeroText: React.FC = () => {
 
     split.chars.forEach((char) => {
       gsap.set(char, {
-        attr: { "data-content": char.innerHTML }
+        attr: { "data-content": char.innerHTML },
       });
     });
 
@@ -35,11 +35,11 @@ const HeroText: React.FC = () => {
         if (dist < 100) {
           gsap.to(char, {
             overwrite: true,
-            duration: 1.2 - dist / 100,
+            duration: 2 - dist / 200,
             scrambleText: {
               text: (char as HTMLElement).dataset.content ?? "",
-              chars: "#",
-              speed: 2,
+              chars: "*",
+              speed: 0.1,
             },
             ease: "none",
           });
@@ -57,7 +57,7 @@ const HeroText: React.FC = () => {
 
   return (
     <p ref={textRef} className={styles.textBlock}>
-      Create Cool Sh!t And Make It Look Good
+      TRYING TO MAKE STUFF THAT DOESN'T SUCK
     </p>
   );
 };
