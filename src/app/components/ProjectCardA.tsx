@@ -5,6 +5,7 @@ import styles from "../styles/ProjectCard.module.css";
 type ProjectCardProps = {
   title: string;
   description: string;
+  tag: string;
   media?: { type: "image" | "video"; src: string; alt?: string };
   buttonText: string;
   buttonLink: string;
@@ -14,6 +15,7 @@ type ProjectCardProps = {
 const ProjectCardA: React.FC<ProjectCardProps> = ({
   title,
   description,
+  tag,
   media,
   buttonText,
   buttonLink,
@@ -46,6 +48,7 @@ const ProjectCardA: React.FC<ProjectCardProps> = ({
         />
       )}
     </motion.div>
+    <span className={styles.featureTag}>{tag}</span>
     <h3 className={styles.featureTitle}>{title}</h3>
     {/* <p className={styles.featureDescription}>{description}</p> */}
     <a className={styles.featureButtonA} href={buttonLink}>
