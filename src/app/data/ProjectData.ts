@@ -18,7 +18,7 @@ export const projectCardsData: ProjectCardData[] = [
       alt: "Photo Collage",
     },
     buttonText: "View Project",
-    buttonLink: "/features/responsive",
+    buttonLink: "/projects/PhotoCollage",
   },
   {
     title: "TypeScript",

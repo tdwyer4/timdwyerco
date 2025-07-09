@@ -1,7 +1,17 @@
-.layout {
+.layoutLight {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--background-light);
+  color: var(--text-color);
+}
+
+.layoutDark {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-dark);
+  color: var(--text-light);
 }
 
 .main {

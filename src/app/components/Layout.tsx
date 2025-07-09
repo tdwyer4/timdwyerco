@@ -1,25 +1,28 @@
-'use client';
+"use client";
 
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import styles from '../styles/Layout.module.css'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import styles from "../styles/Layout.module.css";
 
 interface LayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
+  variant?: "light" | "dark";
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  variant = "light",
+}: LayoutProps) => {
   return (
-    <div className={styles.layout}>
+    <div
+      className={variant === "dark" ? styles.layoutDark : styles.layoutLight}
+    >
       <Header />
-      <main className={styles.main}>
-        {children}
-      </main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
-
+export default Layout;
