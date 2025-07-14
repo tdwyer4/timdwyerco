@@ -26,7 +26,7 @@ export const projectCardsData: ProjectCardData[] = [
     tag: "Concept",
     media: { type: "image", src: "/images/BG1.jpg", alt: "TypeScript" },
     buttonText: "View Project",
-    buttonLink: "/features/typescript",
+    buttonLink: "/projects/ColorChanger",
   },
   {
     title: "CSS Modules",

@@ -1,0 +1,27 @@
+.riveContainerWrap {
+    height: 800px;
+    width: 100%;
+}
+
+.riveContainer {
+    padding: 16px;
+    max-width: 960px;
+    margin: auto;
+    
+}
+
+.riveStyleBase{
+    min-height: 600px;
+}
+
+.riveStyleBase > canvas {
+    width: 100%
+}
+
+.riveTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}

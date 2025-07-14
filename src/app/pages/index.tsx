@@ -25,7 +25,6 @@ const Home: React.FC = () => {
       </Head>
 
       <Layout>
-        {/* Hero Section */}
 
         <motion.section
           className={styles.hero}
@@ -33,7 +32,7 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <GradientBG />
+          <GradientBG variant="light"/>
           <div className={styles.heroContent}>
             <motion.h1
               className={styles.heroTitle}

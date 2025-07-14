@@ -3,7 +3,11 @@
 import { useEffect, useRef } from "react";
 import styles from "../styles/GradientBG.module.css";
 
-function GradientBG() {
+type GradientBGProps = {
+  variant?: "light" | "dark";
+}
+
+const GradientBG: React.FC<GradientBGProps> = ({ variant = "light"}: GradientBGProps) => {
     const appRef = useRef<HTMLDivElement | null>(null);
     const toRef = useRef(null); // Assuming you'll use this later
 
@@ -44,7 +48,7 @@ function GradientBG() {
 }, []);
 
     return (
-        <div className={styles.container} id="container" ref={appRef} data-scroll-container>
+        <div className={variant === "dark" ? styles.containerDark : styles.containerLight} id="container" ref={appRef} data-scroll-container>
            <div className={styles.noiseOverlay} />
             {/* <div>This is the GradientBG</div> */}
         </div>

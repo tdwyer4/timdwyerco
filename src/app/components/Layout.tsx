@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import styles from "../styles/Layout.module.css";
 
-interface LayoutProps {
+type LayoutProps = {
   children: React.ReactNode;
   variant?: "light" | "dark";
 }

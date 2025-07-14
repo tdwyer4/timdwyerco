@@ -1,0 +1,25 @@
+.gradientTitleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  padding: 16px;
+  gap: 0px;
+}
+
+.gradientTitle {
+    font-size: 3rem;
+    padding: 16px ;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.gradientTag {
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 2;
+
+}
